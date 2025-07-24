@@ -25,7 +25,7 @@ public class TwitterPoll {
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://api.twitter.com/2/tweets/search/recent?query=trending&max_results=10&tweet.fields=created_at,author_id"))
-                .header("Authorization","Bearer AAAAAAAAAAAAAAAAAAAAALVm3AEAAAAAKVNRQLh9XfR04JAh20iENJimMOU%3DAtOYnmZvjtY8xZPiET3R39dgp8E7XudsrBWlzhUYhBKp9s3Kzt")
+                .header("Authorization","Bearer <>")
                 .GET()
                 .build();
         client.sendAsync(request,HttpResponse.BodyHandlers.ofInputStream()).thenAccept(
